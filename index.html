@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - LiveMeter</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #00ff87;
+      --secondary: #a3ff12;
+      --bg-dark: #020c06;
+      --card-bg: rgba(6, 26, 14, 0.92);
+      --text-main: #ffffff;
+      --text-muted: #94a3b8;
+      --card-border: rgba(0, 255, 135, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      background: var(--bg-dark);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(0, 255, 135, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(163, 255, 18, 0.08) 0px, transparent 50%);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1.5px solid var(--card-border);
+      border-radius: 28px;
+      padding: 32px 24px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        padding: 48px;
+      }
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 255, 135, 0.15);
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+    }
+
+    .brand-logo {
+      font-size: 22px;
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-logo i {
+      color: var(--primary);
+      -webkit-text-fill-color: initial;
+    }
+
+    .last-updated {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .intro {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+
+    .section {
+      margin-bottom: 24px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 18px;
+      padding: 20px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title i {
+      font-size: 14px;
+    }
+
+    .section p {
+      font-size: 13.5px;
+      line-height: 1.7;
+      color: #e2e8f0;
+    }
+
+    .section ul {
+      margin-top: 10px;
+      padding-left: 20px;
+      font-size: 13.5px;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(0, 255, 135, 0.15);
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 255, 135, 0.1);
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background: var(--primary);
+      color: #020c06;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Top Header -->
+    <div class="header">
+      <div class="brand-logo">
+        <i class="fa-regular fa-clock"></i> LiveMeter
+      </div>
+      <div class="last-updated">
+        সর্বশেষ আপডেট: <span id="current-date"></span>
+      </div>
+    </div>
+
+    <h1>Privacy Policy (গোপনীয়তা নীতি)</h1>
+    <p class="intro">
+      <strong>LiveMeter</strong> অ্যাপটি ব্যবহারের জন্য আপনাকে ধন্যবাদ। আমরা আপনার গোপনীয়তাকে অত্যন্ত গুরুত্ব দিই। এই গোপনীয়তা নীতির মাধ্যমে ব্যাখ্যা করা হয়েছে যে কীভাবে আমাদের অ্যাপটি কাজ করে এবং কেন আপনার ব্যক্তিগত তথ্য সম্পূর্ণ সুরক্ষিত থাকে।
+    </p>
+
+    <!-- Section 1 -->
+    <div class="section">
+      <div class="section-title">
+        <i class="fa-solid fa-user-shield"></i> ১. তথ্য সংগ্রহ ও ব্যবহার
+      </div>
+      <p>
+        <strong>LiveMeter</strong> হলো একটি অফলাইন-ফ্রেন্ডলি বয়স গণনা করার টুল। অ্যাপে আপনার বয়স বা জন্ম তারিখ হিসাব করার সময় যে তথ্যটি প্রদান করেন (যেমন: দিন, মাস ও বছর), তা শুধুমাত্র আপনার ডিভাইসেই প্রসেস করা হয়। আমরা আপনার জন্ম তারিখ বা অন্য কোনো ব্যক্তিগত তথ্য কোনো সার্ভারে সংরক্ষণ করি না এবং কারো সাথে শেয়ার করি না।
+      </p>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+      <div class="section-title">
+        <i class="fa-solid fa-database"></i> ২. লোকাল স্টোরেজ ও পারমিশন
+      </div>
+      <p>
+        অ্যাপটি সুন্দরভাবে চালানোর জন্য কোনো অপ্রয়োজনীয় ডিভাইস পারমিশন (যেমন: কন্টাক্ট, ক্যামেরা বা লোকেশন) নেওয়ার প্রয়োজন হয় না। আপনার কোনো ডেটা আমাদের কোনো অনলাইন ডাটাবেজে জমা হয় না।
+      </p>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+      <div class="section-title">
+        <i class="fa-solid fa-chart-pie"></i> ৩. থার্ড-পার্টি সার্ভিস
+      </div>
+      <p>
+        আমরা অ্যাপের কর্মক্ষমতা এবং ডিজাইন উন্নত করার জন্য কিছু থার্ড-পার্টি সার্ভিস ব্যবহার করে থাকতে পারি (যেমন: ফন্ট বা আইকন লাইব্রেরি)। তবে এই সার্ভিসগুলোর মাধ্যমে আপনার ব্যক্তিগত কোনো পরিচয়যোগ্য তথ্য সংগৃহীত হয় না।
+      </p>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section">
+      <div class="section-title">
+        <i class="fa-solid fa-lock"></i> ৪. ডেটা নিরাপত্তা
+      </div>
+      <p>
+        যেহেতু আপনার সমস্ত ডেটা স্থানীয়ভাবে (Client-Side) প্রসেস করা হয়, তাই এটি সম্পূর্ণ নিরাপদ। আপনার ডিভাইস ছাড়া অন্য কারো কাছে এই তথ্য দেখার সুযোগ নেই।
+      </p>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="section">
+      <div class="section-title">
+        <i class="fa-solid fa-envelope"></i> ৫. যোগাযোগ
+      </div>
+      <p>
+        আমাদের প্রাইভেসি পলিসি সম্পর্কে আপনার কোনো প্রশ্ন বা মতামত থাকলে নির্দ্বিধায় আমাদের সাথে যোগাযোগ করতে পারেন:
+      </p>
+      <ul>
+        <li>ইমেইল: <strong>muktoprohacked@gmail.com</strong></li>
+        <li>অ্যাপ নাম: <strong>LiveMeter Pro</strong></li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      &copy; <span id="year"></span> LiveMeter • All Rights Reserved.
+    </div>
+
+  </div>
+
+  <script>
+    // অটোমেটিক বর্তমান তারিখ এবং বছর সেট করার নিয়ম
+    const dateElement = document.getElementById('current-date');
+    const yearElement = document.getElementById('year');
+    
+    const today = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    
+    dateElement.innerText = today.toLocaleDateString('bn-BD', options);
+    yearElement.innerText = today.getFullYear();
+  </script>
+</body>
+</html>
